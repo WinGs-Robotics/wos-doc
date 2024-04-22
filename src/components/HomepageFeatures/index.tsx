@@ -10,32 +10,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/logo_only.svg").default,
+    title: "Various Cobots Support",
+    Svg: require("@site/static/img/robot.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        WOS is compatible with a wide range of Cobot brands including Franka
+        Emika, Universal Robotics, STR400 and more. These devices can be
+        controlled concurrently on the same computer.
       </>
     ),
   },
   {
-    title: "Focus on What Matters",
-    Svg: require("@site/static/img/logo_only.svg").default,
+    title: "Low-Code Programming",
+    Svg: require("@site/static/img/flowchart.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Features like motion planning and real-time control are accessible via a
+        graphical interface. This facilitates the synchronized operation of
+        different branded robots for complex tasks.
       </>
     ),
   },
   {
-    title: "Powered by React",
-    Svg: require("@site/static/img/logo_only.svg").default,
+    title: "Multi-Platform, OS",
+    Svg: require("@site/static/img/raspberryPi.svg").default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        WOS runs smoothly on Linux, Windows, Mac, and Android, supporting both
+        x86 and ARM architectures. One simple excutable, efficiently performance
+        with minimal CPU usage, even on a $30 Raspberry Pi 3.
       </>
     ),
   },

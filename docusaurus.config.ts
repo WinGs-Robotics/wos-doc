@@ -4,18 +4,18 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "WOS Documentation",
-  tagline: "WinGs Operating Studio is Cool",
-
+  tagline: "WinGs Operating Studio - Your Innovation, One Step Ahead!",
   // Set the production url of your site here
   url: "https://wingsrobotics.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
+  favicon: "img/logo_only.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "WinGs-Robotics", // Usually your GitHub org/user name.
+  projectName: "wos-doc", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -34,11 +34,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/wingsrobotics/wos-doc",
-        },
-        blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/wingsrobotics/wos-doc",
+          editUrl: "https://github.com/WinGs-Robotics/wos-doc",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -58,13 +54,24 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "quickStartSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Quick Start",
         },
-        { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/wingsrobotics/wos-doc",
+          type: "docSidebar",
+          sidebarId: "documentationSidebar",
+          position: "left",
+          label: "Documentation",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "apiSidebar",
+          position: "left",
+          label: "APIs",
+        },
+        {
+          href: "https://github.com/WinGs-Robotics/wos-doc",
           label: "GitHub",
           position: "right",
         },
@@ -77,8 +84,8 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "Documentation",
+              to: "/docs/documentation/intro",
             },
           ],
         },
@@ -86,16 +93,8 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "Website",
+              href: "https://wingsrobotics.com",
             },
           ],
         },
@@ -103,17 +102,13 @@ const config: Config = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/WinGs-Robotics/wos-doc",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} WinGs Robotics`,
     },
     prism: {
       theme: prismThemes.github,
