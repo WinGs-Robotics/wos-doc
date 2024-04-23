@@ -34,7 +34,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/WinGs-Robotics/wos-doc",
+          editUrl: "https://github.com/WinGs-Robotics/wos-doc/tree/main",
         },
         theme: {
           customCss: "./src/css/custom.css",
