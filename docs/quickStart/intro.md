@@ -124,7 +124,7 @@ Once the WOS backend is successfully launched, you will be greeted by the interf
 
 - **Appstore** (Under Development):
 
-  - In the future, this will enable third parties —w hether individuals or companies —t o publish easy-to-use apps tailored for various end-user scenarios involving robotic arms.
+  - In the future, this will enable third parties — whether individuals or companies — to publish easy-to-use apps tailored for various end-user scenarios involving robotic arms.
 
 - **Settings**:
 
@@ -188,7 +188,7 @@ This section details the steps to add an STR400 robot to your WOS setup. Follow 
 
   - EETransform Option
 
-    - If an end-effector is installed, select the **_EETransform_** checkbox.
+    - If an end-effector is installed, select the `EETransform` checkbox.
     - Configure the 6D coordinate transformation from the robot's last joint to the end-effector ’s tip. For instance:
     - Example Setting: For an end-effector 0.05m long, the other positions unchanged.
 
@@ -212,7 +212,7 @@ This section details the steps to add an STR400 robot to your WOS setup. Follow 
 
 ### Verifying Robot Configuration
 
-- Return to Robot Settings by click **X** on the top of the configuration page.
+- Return to Robot Settings by click `X` on the top of the configuration page.
 - Click on the Robot tab to view the list of configured robots. Here should be what expected to see:
 
 <div align="center">
@@ -220,7 +220,7 @@ This section details the steps to add an STR400 robot to your WOS setup. Follow 
 </div>
 
 - Understanding Component ID
-  - Each component is assigned a unique identifier, such as **_7eeb2010-d0b1-4494-86b1-efa136212fa1_**. This Component ID is crucial for interfacing with external APIs to perform operations on this specific robot.
+  - Each component is assigned a unique identifier, such as `7eeb2010-d0b1-4494-86b1-efa136212fa1`. This Component ID is crucial for interfacing with external APIs to perform operations on this specific robot.
 - Action Icons
   - **_Edit_**: Click this icon to modify the component's settings if you need to change any configuration details.
   - **_Delete_**: Use this icon to remove the component from your WOS setup. Be cautious with this option as it cannot be undone.
@@ -236,8 +236,8 @@ After ensuring your STR400 robot component is correctly configured, you can begi
   - Click on the robot arm icon located at the top right corner of the WOS UI. This action will trigger a sidebar containing quick action buttons.
 - **Start the Simulation or Actual Robot**
 
-  - Within the sidebar, click on the **_Simulation_** button to start a virtual STR400. This simulates the robot's operations based on the current configurations and scenarios defined in the Graph interface.
-  - If you are using an actual STR400 robot, ensure it is correctly installed in a safe and appropriate environment before proceeding. Clicking the **_Start_** button in this context will activate the real robot.
+  - Within the sidebar, click on the `Simulation` button to start a virtual STR400. This simulates the robot's operations based on the current configurations and scenarios defined in the Graph interface.
+  - If you are using an actual STR400 robot, ensure it is correctly installed in a safe and appropriate environment before proceeding. Clicking the `Start` button in this context will activate the real robot.
 
   :warning: **Warning**: Prior to activating a real robot, double-check the surrounding area to ensure it is free of obstacles and the robot is installed on a stable surface to prevent accidents.
 
@@ -245,7 +245,7 @@ After ensuring your STR400 robot component is correctly configured, you can begi
 
   - After completing the tasks or tests, shut down the robot or end the simulation through the same sidebar by clicking a Stop or End Simulation button, ensuring all movements cease properly.
 
-  :warning: **Warning**: Prior to Shutting Down a real robot, please ensure it is back to its **Zero** position, before shut down, because the joints are becoming passitive when shutting down, it will fall if not in a proper postion.
+  :warning: **Warning**: Prior to Shutting Down a real robot, please ensure it is back to its `Zero` position, before shut down, because the joints are becoming passitive when shutting down, it will fall if not in a proper postion.
 
 <div align="center">
   <img src="/img/startstr400.png" alt="Start Str400" width="60%"/>
@@ -256,8 +256,8 @@ After ensuring your STR400 robot component is correctly configured, you can begi
 Control the STR400 robot in real-time using the keypad interface provided in the WOS UI. This section explains how to navigate to this feature and utilize it effectively.
 
 - **Accessing Keypad Control**
-  - Press the **>** button located to the right of the STR400 component listing to expand the operation interface.
-  - Click on the **Control** tab to open the control interface as shown below:
+  - Press the `>` button located to the right of the STR400 component listing to expand the operation interface.
+  - Click on the `Control` tab to open the control interface as shown below:
 
 <div align="center">
   <img src="/img/keypadControlSmall.png" alt="keypad Control Small" width="40%"/>
@@ -284,7 +284,7 @@ Control the STR400 robot in real-time using the keypad interface provided in the
       - **_Red Line on the Floor_**: Represents the global X-axis.
       - **_Green Line:_** Indicates the Y-axis direction.
       - **_End-Effector Coordinate System:_** Displays the position of the end-effector.
-    - Clicking on arrow at top right conner on the rendering screen, brings you to a full-screen page of the quick control panel. We highly recommend you to open up two windows of brower to obtain the best experience when developing a **Graph** project:
+    - Clicking on arrow at top right conner on the rendering screen, brings you to a full-screen page of the quick control panel. We highly recommend you to open up two windows of brower to obtain the best experience when developing a `Graph` project:
 
 <div align="center">
   <img src="/img/multiWindow.png" alt="Multi-window" width="100%"/>
@@ -295,7 +295,7 @@ Control the STR400 robot in real-time using the keypad interface provided in the
     - By default, the control is set to adjust the end-effector's position relative to its current position (relative increments in six dimensions).
     - To switch to global coordinate control:
       - Click the 🖊 icon to edit settings.
-      - Disable the **Relative?** option to use global coordinates for control.
+      - Disable the `Relative?` option to use global coordinates for control.
 
 ## Your First Graph Project
 
@@ -313,8 +313,8 @@ To begin creating graph projects with WOS, follow these straightforward steps:
 
 - **Enter the Graph Editor**
   - Click on the purple graph-style icon to enter the graph editing interface.
-  - Click the green **+** icon in the top left corner to open the drawer containing all the functional modules provided by WOS.
-  - To hide this toolbar, simply click the **X** at the drawer's edge.
+  - Click the green `+` icon in the top left corner to open the drawer containing all the functional modules provided by WOS.
+  - To hide this toolbar, simply click the `X` at the drawer's edge.
 
 <div align="center">
   <img src="/img/graphNodes.png" alt="Graph Nodes" width="100%"/>
@@ -333,7 +333,7 @@ To begin creating graph projects with WOS, follow these straightforward steps:
 
   - Click on the WScript module to open its parameter settings window.
   - Select the Started Real Robot Component/ Simulated Robot Component, in our case it is **STR400**
-  - And then, click on **OPEN WSCRIPT EDITOR** This is where you can configure the specifics of the robotic arm movements—complex, smooth, and precise actions can be programmed here.
+  - And then, click on `OPEN WSCRIPT EDITOR` This is where you can configure the specifics of the robotic arm movements—complex, smooth, and precise actions can be programmed here.
   - Copy the WScript provided below, paste this script into the text box in the WScript editor window.
 
 ```WScript
@@ -376,8 +376,8 @@ A:MOVEJ 0,0,1.5707963268,0,1.5707963268,0,5
 > For a more detailed understanding of how to write and implement WScripts, refer to the [Documentation](../documentation/intro.md) provided in the WOS DOC.
 
 - Save and Exit the Editor:
-  - Click the X button to close the editor once you have pasted the script.
-  - Press the SAVE button to save the changes to your graph settings.
+  - Click the `X` button to close the editor once you have pasted the script.
+  - Press the `SAVE` button to save the changes to your graph settings.
 - Activating the Graph:
 
   - Once your modules are configured and connected, press the green triangle play button at the bottom of the screen to start the simulation or execution of the graph.

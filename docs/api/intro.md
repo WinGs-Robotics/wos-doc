@@ -2,46 +2,24 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# Learn More About WOS APIs
 
-## Getting Started
+Explore our [API documentation](../api/intro.md) to gain a comprehensive understanding of the WOS design philosophy and discover how to utilize various practical APIs. This resource is essential for developers looking to seamlessly integrate WOS capabilities into their applications and solutions.
 
-Get started by **creating a new site**.
+### What You Will Find:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- **Detailed API Documentation**: Provides thorough information on each API, including usage scenarios, syntax, and example requests and responses.
+- **Design Philosophy**: Offers insights into the foundational concepts behind the WOS APIs, helping you understand not just how they work, but why they are structured the way they are.
+- **Integration Tips**: Learn best practices for integrating WOS into your systems, ensuring efficient and effective usage.
 
-### What you'll need
+## Enhance Your System
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Integrating WOS through our APIs can enhance your system's capabilities by enabling advanced control, automation, and monitoring features. Whether you are looking to optimize robotic operations, streamline processes, or implement new functionalities, our APIs provide the tools you need to achieve your objectives.
 
-## Generate a new site
+## Get Started
 
-Generate a new Docusaurus site using the **classic template**.
+Begin your integration journey by visiting the [API documentation](../api/intro.md). Here, you will find all the information needed to start using WOS APIs effectively, from initial setup to advanced configuration tips.
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Taking these steps will ensure that you are well-equipped to fully leverage the power of WOS in your projects, driving innovation and efficiency in your operations.
