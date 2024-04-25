@@ -1,109 +1,109 @@
-import { themes as prismThemes } from "prism-react-renderer";
-import type { Config } from "@docusaurus/types";
-import type * as Preset from "@docusaurus/preset-classic";
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: "WOS Documentation",
-  tagline: "WinGs Operating Studio - Your Innovation, One Step Ahead!",
+  title: 'WOS Documentation',
+  tagline: 'WinGs Operating Studio - Your Innovation, One Step Ahead!',
   // Set the production url of your site here
-  url: "https://wingsrobotics.com",
+  url: 'https://wings-robotics.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
-  favicon: "img/logo_only.ico",
+  baseUrl: '/wos-doc/',
+  favicon: 'img/logo_only.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "WinGs-Robotics", // Usually your GitHub org/user name.
-  projectName: "wos-doc", // Usually your repo name.
+  organizationName: 'WinGs-Robotics', // Usually your GitHub org/user name.
+  projectName: 'wos-doc', // Usually your repo name.
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
     [
-      "classic",
+      'classic',
       {
         docs: {
-          sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/WinGs-Robotics/wos-doc/tree/main",
+          sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/WinGs-Robotics/wos-doc/tree/main',
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    image: "img/logo_only.png",
+    image: 'img/logo_only.png',
     navbar: {
-      title: "WOS DOC",
+      title: 'WOS DOC',
       logo: {
-        alt: "WinGs Robotics Logo",
-        src: "img/logo_only.png",
+        alt: 'WinGs Robotics Logo',
+        src: 'img/logo_only.png',
       },
       items: [
         {
-          type: "docSidebar",
-          sidebarId: "quickStartSidebar",
-          position: "left",
-          label: "Quick Start",
+          type: 'docSidebar',
+          sidebarId: 'quickStartSidebar',
+          position: 'left',
+          label: 'Quick Start',
         },
         {
-          type: "docSidebar",
-          sidebarId: "documentationSidebar",
-          position: "left",
-          label: "Documentation",
+          type: 'docSidebar',
+          sidebarId: 'documentationSidebar',
+          position: 'left',
+          label: 'Documentation',
         },
         {
-          type: "docSidebar",
-          sidebarId: "apiSidebar",
-          position: "left",
-          label: "APIs",
+          type: 'docSidebar',
+          sidebarId: 'apiSidebar',
+          position: 'left',
+          label: 'APIs',
         },
         {
-          href: "https://github.com/WinGs-Robotics/wos-doc",
-          label: "GitHub",
-          position: "right",
+          href: 'https://github.com/WinGs-Robotics/wos-doc',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         {
-          title: "Docs",
+          title: 'Docs',
           items: [
             {
-              label: "Documentation",
-              to: "/docs/documentation/intro",
+              label: 'Documentation',
+              to: '/docs/documentation/intro',
             },
           ],
         },
         {
-          title: "Community",
+          title: 'Community',
           items: [
             {
-              label: "Website",
-              href: "https://wingsrobotics.com",
+              label: 'Website',
+              href: 'https://wingsrobotics.com',
             },
           ],
         },
         {
-          title: "More",
+          title: 'More',
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/WinGs-Robotics/wos-doc",
+              label: 'GitHub',
+              href: 'https://github.com/WinGs-Robotics/wos-doc',
             },
           ],
         },
