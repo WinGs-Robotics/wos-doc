@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: "Trajectory Record"
+title: 'Trajectory Record'
 ---
 
 # Trajectory Record
@@ -8,7 +8,7 @@ title: "Trajectory Record"
 The Trajectory Record Node offers a real-time teaching functionality, currently supported only for robotic arm hardware. This feature can be used within a Graph as well as directly via the robotic arm's quick action controls. Trajectories recorded can be played or paused in a full-screen virtual environment.
 
 <div align="center">
-  <img src="/img/RealtimeTeaching.gif" alt="Realtime Teaching" width="100%"/>
+  <img src={require("/img/RealtimeTeaching.gif").default} alt="Realtime Teaching" width="100%"/>
 </div>
 
 ## Setting Up the Trajectory Record Node
@@ -24,7 +24,7 @@ Let's take the STR400 as an example:
    - In Manual mode, the STR400's joints become passive, meaning they operate without active torque. It's essential to manually support the robot arm to prevent it from collapsing.
 
 <div align="center">
-  <img src="/img/trajRecord.png" alt="Trajectory Record Interface" width="100%"/>
+  <img src={require("/img/trajRecord.png").default} alt="Trajectory Record Interface" width="100%"/>
 </div>
 
 3. **Recording a Trajectory**:

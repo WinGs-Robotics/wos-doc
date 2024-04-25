@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Developer Mode"
+title: 'Developer Mode'
 ---
 
 # Developer Page
@@ -22,7 +22,7 @@ To access the Developer page, follow these instructions:
    - Find the WinGs Robotics logo on the About page. You will need to tap the logo six times in succession.
 
    <div align="center">
-      <img src="/img/accessDebug.png" alt="Access Developer Mode" width="100%"/>
+      <img src={require("/img/accessDebug.png").default} alt="Access Developer Mode" width="100%"/>
    </div>
 
 3. **Accessing Developer Options**:
@@ -30,7 +30,7 @@ To access the Developer page, follow these instructions:
    - After the sixth tap, a small bug icon will appear in the upper right corner of the interface. This icon indicates that Developer mode has been activated.
 
    <div align="center">
-      <img src="/img/debug.png" alt="Developer Mode Icon" width="20%"/>
+      <img src={require("/img/debug.png").default} alt="Developer Mode Icon" width="20%"/>
    </div>
 
 4. **Enter the Developer Page**:
@@ -46,7 +46,7 @@ The Developer Page in the WOS system offers a variety of tools that enable devel
 Nodes in WOS are analogous to processes in a computer operating system. They represent the active elements running within the system, such as robot drivers or kinematic solvers.
 
 <div align="center">
-  <img src="/img/developerNodes.png" alt="Nodes in Developer Page" width="100%"/>
+  <img src={require("/img/developerNodes.png").default} alt="Nodes in Developer Page" width="100%"/>
 </div>
 
 - **Functionality**: By clicking on the Node tab, you can view all currently running nodes within WOS. The number next to the icons at the top right indicates how many processes are active.
@@ -56,7 +56,7 @@ Nodes in WOS are analogous to processes in a computer operating system. They rep
 The Resource tab is crucial for developers looking to control WOS resources via APIs.
 
 <div align="center">
-  <img src="/img/developerResource.png" alt="Resource in Developer Page" width="100%"/>
+  <img src={require("/img/developerResource.png").default} alt="Resource in Developer Page" width="100%"/>
 </div>
 
 - **Access**: Click on the Resource tab to see resources associated with active components within WOS.
@@ -67,7 +67,7 @@ The Resource tab is crucial for developers looking to control WOS resources via 
 The Registry page provides detailed definitions of all nodes available in Graph, including their inputs and outputs.
 
 <div align="center">
-  <img src="/img/developerReg.png" alt="Registry in Developer Page" width="100%"/>
+  <img src={require("/img/developerReg.png").default} alt="Registry in Developer Page" width="100%"/>
 </div>
 
 - **Example**: The displayed example shows how the 'Move in Sequence' node is defined between the frontend and backend communications within WOS.
@@ -77,7 +77,7 @@ The Registry page provides detailed definitions of all nodes available in Graph,
 The API page includes a practical tool for quickly testing various APIs registered within WOS.
 
 <div align="center">
-  <img src="/img/developerRequest.png" alt="API Testing in Developer Page" width="100%"/>
+  <img src={require("/img/developerRequest.png").default} alt="API Testing in Developer Page" width="100%"/>
 </div>
 
 - **Functionality**: This tool allows you to select a registered resource, choose an appropriate request, and submit a JSON payload to test the API.

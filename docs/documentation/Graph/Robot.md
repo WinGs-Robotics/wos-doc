@@ -18,7 +18,7 @@ The "Move Joints" node is a fundamental module in the WOS system. It enables pre
 
 2. **Accessing Parameters**:
 <div align="center">
-  <img src="/img/moveJoint.png" alt="moveJoint" width="50%"/>
+  <img src={require("/img/moveJoint.png").default} alt="moveJoint" width="50%"/>
 </div>
    - Double-click on the module. This action will prompt a parameter editing window as shown above.
 
@@ -56,7 +56,7 @@ To configure and use the Move Cartesian Node, follow the steps you would for the
 ### Configuring the Module
 
 <div align="center">
-  <img src="/img/moveCartesian.png" alt="moveCartesian" width="50%"/>
+  <img src={require("/img/moveCartesian.png").default} alt="moveCartesian" width="50%"/>
 </div>
 ### Setting the Destination
 
@@ -84,7 +84,7 @@ To configure and use the Move Cartesian Node, follow the steps you would for the
 The `Move in Line`(MOVEL) command is essential for applications requiring precise, linear motion paths. This node commands the robotic arm to move directly along a straight line from its current position to a specified target position.
 
 <div align="center">
-  <img src="/img/str400MoveL.png" alt="moveLine" width="50%"/>
+  <img src={require("/img/str400MoveL.png").default} alt="moveLine" width="50%"/>
 </div>
 
 `Move in Line` ensures that the movement starts and ends at zero speed, facilitating smooth transitions and precise positioning. This node is particularly useful in tasks where maintaining a linear trajectory is critical, such as in assembly lines or when handling delicate materials.
@@ -97,7 +97,7 @@ The `Move in Line`(MOVEL) command is essential for applications requiring precis
 ### Editing Interface
 
 <div align="center">
-  <img src="/img/moveLine.png" alt="moveLine" width="50%"/>
+  <img src={require("/img/moveLine.png").default} alt="moveLine" width="50%"/>
 </div>
 
 - **Parameters Configuration**
@@ -116,7 +116,7 @@ The `Move in Line`(MOVEL) command is essential for applications requiring precis
 The `Move in Sequence` (MOVES) command extends the functionality of the `Move in Line` (MOVEL) by facilitating continuous multi-point movements. This command is crucial for applications that require seamless transitions between multiple points in a defined trajectory.
 
 <div align="center">
-  <img src="/img/str400MoveS.png" alt="STR400 Move in Sequence" width="50%"/>
+  <img src={require("/img/str400MoveS.png").default} alt="STR400 Move in Sequence" width="50%"/>
 </div>
 
 - **Single Command**: When the command includes only one `Move in Sequence` operation, it functions identically to a `Move in Line`, moving the robot arm in a straight line to a specified target position.
@@ -131,7 +131,7 @@ The `Move in Sequence` (MOVES) command extends the functionality of the `Move in
 ### Editing Interface
 
 <div align="center">
-  <img src="/img/moveSequence.png" alt="Move in Sequence Interface" width="50%"/>
+  <img src={require("/img/moveSequence.png").default} alt="Move in Sequence Interface" width="50%"/>
 </div>
 
 - **Component Selection**: Choose the robotic arm component that you wish to control through the `Move in Sequence` command.
@@ -211,7 +211,7 @@ A: MOVES X6, Y6, Z6, Roll6, Pitch6, Yaw6, Time6
 The WScript Editor provides a user-friendly interface for entering and managing scripts that control the robotic movements. After selecting the desired component for operation, the WScript editor can be accessed for detailed script customization.
 
 <div align="center">
-  <img src="/img/wscriptEditor.png" alt="WScript Editor Interface" width="100%"/>
+  <img src={require("/img/wscriptEditor.png").default} alt="WScript Editor Interface" width="100%"/>
 </div>
 
 #### Using the WScript Editor

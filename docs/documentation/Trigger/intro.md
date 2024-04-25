@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Interval Trigger"
+title: 'Interval Trigger'
 ---
 
 # Interval Trigger
@@ -20,7 +20,7 @@ To set up an Interval Trigger, follow these steps:
    - Select the option to create a new Interval Trigger. Upon selection, you will be directed to the interface shown below.
 
 <div align="center">
-  <img src="/img/trigger.png" alt="Interval Trigger Configuration" width="100%"/>
+  <img src={require("/img/trigger.png").default} alt="Interval Trigger Configuration" width="100%"/>
 </div>
 
 ### Configuring the Interval Trigger

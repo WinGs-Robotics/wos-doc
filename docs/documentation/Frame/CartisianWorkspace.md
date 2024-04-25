@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: "Cartesian Space Definition"
+title: 'Cartesian Space Definition'
 ---
 
 # Cartesian Space Definition
@@ -37,13 +37,13 @@ Learn more about [Euler Angles](https://en.wikipedia.org/wiki/Euler_angles) and 
 # STR400 Example
 
 <div align="center">
-  <img src="/img/str400angledir.png" alt="STR400 Direction" width="60%"/>
+  <img src={require("/img/str400angledir.png").default} alt="STR400 Direction" width="60%"/>
 </div>
 
 As shown in the image above, the top-right corner displays the current Cartesian coordinates. This translation represents the transformation from the robot base's global coordinate to the coordinates of the end-effector.
 
 <div align="center">
-  <img src="/img/addstr400.png" alt="Adding STR400" width="60%"/>
+  <img src={require("/img/addstr400.png").default} alt="Adding STR400" width="60%"/>
 </div>
 
 However, notice that the end-effector's coordinates do not exactly align with the final joint of the robot arm. This is due to the EE Transform applied during the robot setup, adding a **0.05** meter offset along the z-axis. This EE Transform refers to a coordinate transformation from the end of the robot arm to the tip of the end-effector.

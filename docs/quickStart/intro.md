@@ -7,7 +7,7 @@ sidebar_position: 1
 Let's discover **WOS in less than 10 minutes**.
 
 <div align="center">
-  <img src="/img/success2024.gif" alt="Success2024" width="100%"/>
+  <img src={require("/img/success2024.gif").default} alt="Success2024" width="100%"/>
 </div>
 
 ## Download and Installation
@@ -110,7 +110,7 @@ Replace **_192.168.179.1_** with the actual IP address of the machine where the 
 ### Main Page
 
 <div align="center">
-  <img src="/img/mainpage.png" alt="Main Page" width="80%" />
+  <img src={require("/img/mainpage.png").default} alt="Main Page" width="80%" />
 </div>
 Once the WOS backend is successfully launched, you will be greeted by the interface shown above. The UI is divided into several sections, each designed for specific functionalities:
 
@@ -157,7 +157,7 @@ This section guides you through the process of operating a virtual STR400 robot 
   - Locate the License tab within the Settings page. Check to see if there is a valid license listed. The license should look something like this:
 
 <div align="center">
-  <img src="/img/license.png" alt="License Verification" />
+  <img src={require("/img/license.png").default} alt="License Verification" />
 </div>
 
 - If no valid license appears, you need to obtain one:
@@ -174,7 +174,7 @@ This section details the steps to add an STR400 robot to your WOS setup. Follow 
   - Click the + icon to add a new robot configuration. This action opens the configuration interface as shown below:
 
 <div align="center">
-  <img src="/img/addcomponents.png" alt="Add Str400" width="50%"/>
+  <img src={require("/img/addcomponents.png").default} alt="Add Str400" width="50%"/>
 </div>
 
 - **Configuring the STR400**
@@ -207,7 +207,7 @@ This section details the steps to add an STR400 robot to your WOS setup. Follow 
     - Click the Submit button to save your settings and add the robot to your WOS environment
 
 <div align="center">
-  <img src="/img/addstr400.png" alt="Add Str400" width="80%"/>
+  <img src={require("/img/addstr400.png").default} alt="Add Str400" width="80%"/>
 </div>
 
 ### Verifying Robot Configuration
@@ -216,7 +216,7 @@ This section details the steps to add an STR400 robot to your WOS setup. Follow 
 - Click on the Robot tab to view the list of configured robots. Here should be what expected to see:
 
 <div align="center">
-  <img src="/img/str400added.png" alt="Add Str400" width="100%"/>
+  <img src={require("/img/str400added.png").default} alt="Add Str400" width="100%"/>
 </div>
 
 - Understanding Component ID
@@ -248,7 +248,7 @@ After ensuring your STR400 robot component is correctly configured, you can begi
   :warning: **Warning**: Prior to Shutting Down a real robot, please ensure it is back to its `Zero` position, before shut down, because the joints are becoming passitive when shutting down, it will fall if not in a proper postion.
 
 <div align="center">
-  <img src="/img/startstr400.png" alt="Start Str400" width="60%"/>
+  <img src={require("/img/startstr400.png").default} alt="Start Str400" width="60%"/>
 </div>
 
 #### Real Time keypad control
@@ -260,7 +260,7 @@ Control the STR400 robot in real-time using the keypad interface provided in the
   - Click on the `Control` tab to open the control interface as shown below:
 
 <div align="center">
-  <img src="/img/keypadControlSmall.png" alt="keypad Control Small" width="40%"/>
+  <img src={require("/img/keypadControlSmall.png").default} alt="keypad Control Small" width="40%"/>
 </div>
 
 - **Using Preset Positions**
@@ -287,7 +287,7 @@ Control the STR400 robot in real-time using the keypad interface provided in the
     - Clicking on arrow at top right conner on the rendering screen, brings you to a full-screen page of the quick control panel. We highly recommend you to open up two windows of brower to obtain the best experience when developing a `Graph` project:
 
 <div align="center">
-  <img src="/img/multiWindow.png" alt="Multi-window" width="100%"/>
+  <img src={require("/img/multiWindow.png").default} alt="Multi-window" width="100%"/>
 </div>
 
 - **Adjusting Control Settings**
@@ -317,7 +317,7 @@ To begin creating graph projects with WOS, follow these straightforward steps:
   - To hide this toolbar, simply click the `X` at the drawer's edge.
 
 <div align="center">
-  <img src="/img/graphNodes.png" alt="Graph Nodes" width="100%"/>
+  <img src={require("/img/graphNodes.png").default} alt="Graph Nodes" width="100%"/>
 </div>
 
 - **Setting Up the WScript Module**
@@ -326,7 +326,7 @@ To begin creating graph projects with WOS, follow these straightforward steps:
     - Connect this module to the Start module. The Start module acts as the entry point of the graph project, and any connected module will execute once the play button is pressed.
 
 <div align="center">
-  <img src="/img/wscript.png" alt="WScript" width="100%"/>
+  <img src={require("/img/wscript.png").default} alt="WScript" width="100%"/>
 </div>
 
 - Configuring the WScript Module:
@@ -368,7 +368,7 @@ A:MOVEJ 0,0,1.5707963268,0,1.5707963268,0,5
 ```
 
 <div align="center">
-  <img src="/img/wscriptEditor.png" alt="Wscript Editor" width="100%"/>
+  <img src={require("/img/wscriptEditor.png").default} alt="Wscript Editor" width="100%"/>
 </div>
 
 > The script you've just input instructs the STR400 to execute a series of movements that culminate in a dance, showcasing the robot's flexibility and range within its operational workspace.
@@ -387,7 +387,7 @@ A:MOVEJ 0,0,1.5707963268,0,1.5707963268,0,5
 If you see the STR400 moving as shown in the gif below, you have successfully completed your first simple graph project. You're now ready to delve deeper into the WOS graph system!
 
 <div align="center">
-  <img src="/img/str400demoLong.gif" alt="STR400 Demo" width="100%"/>
+  <img src={require("/img/str400demoLong.gif").default} alt="STR400 Demo" width="100%"/>
 </div>
 
 ## Next Steps

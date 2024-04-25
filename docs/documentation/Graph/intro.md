@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Graph Basics"
+title: 'Graph Basics'
 ---
 
 # Graph Basics
@@ -18,7 +18,7 @@ Graph does not require users to have coding experience. It enables precise chore
 A Graph project begins with a `Start` node. The green play and stop buttons located at the bottom of the interface control the start and stop of the process, or it ends automatically once all programmed operations are completed.
 
 <div align="center">
-  <img src="/img/basicGraph.png" alt="Basic Graph" width="100%"/>
+  <img src={require("/img/basicGraph.png").default} alt="Basic Graph" width="100%"/>
 </div>
 
 ### Workflow and Execution

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: "WOS Design"
+title: 'WOS Design'
 ---
 
 # WOS Design
@@ -16,7 +16,7 @@ WOS aims to democratize robotics development across diverse computing environmen
 Figure below depicts the node-based architecture of WOS, designed to streamline robotic application development and deployment. At its heart, WOS Core performs communication forwarding and Node lifecycle management. Components, serving as specialized Nodes, manage hardware, whereas Application Nodes handle non-hardware logic, such as algorithms. Functional Nodes connect to WOS Core via APIs to register Services, making them available to front-end GUIs or custom programs. This architecture ensures a scalable and modular approach to robotics, highlighting the efficient integration and management capabilities of WOS.
 
 <div align="center">
-  <img src="/img/WOSDesign.png" alt="WOSDesign" width="40%"/>
+  <img src={require("/img/WOSDesign.png").default} alt="WOSDesign" width="40%"/>
 </div>
 
 ### Node

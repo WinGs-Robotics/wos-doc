@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: "Gripper"
+title: 'Gripper'
 ---
 
 # Gripper
@@ -31,7 +31,7 @@ The Component Action Node is utilized for grippers or robotic arms with special 
 Here, we illustrate using the Jodell EPG and Jodell ERG grippers:
 
 <div align="center">
-  <img src="/img/grippers.png" alt="Jodell Grippers" width="100%"/>
+  <img src={require("/img/grippers.png").default} alt="Jodell Grippers" width="100%"/>
 </div>
 
 First, add these gripper models under Setting -> Robot as shown. Once activated, they become available for use within the Graph through the appropriate action nodes.
@@ -40,14 +40,14 @@ First, add these gripper models under Setting -> Robot as shown. Once activated,
   - Select the Jodell EPG as the component in the node editing interface. You will then see options to select actions like open, close, and home.
 
 <div align="center">
-  <img src="/img/gripperAction.png" alt="Gripper Action Node" width="50%"/>
+  <img src={require("/img/gripperAction.png").default} alt="Gripper Action Node" width="50%"/>
 </div>
 
 - **Using the Component Action Node with Jodell ERG**:
   - Enter the Component Action Node editor and select Jodell ERG. You'll have access to specific actions such as Absolute Rotate and Relative Rotate, which correspond to the unique capabilities provided by the hardware manufacturer.
 
 <div align="center">
-  <img src="/img/componentAction.png" alt="Component Action Node" width="50%"/>
+  <img src={require("/img/componentAction.png").default} alt="Component Action Node" width="50%"/>
 </div>
 
 ### Additional Considerations
